@@ -1,0 +1,187 @@
+*{
+    margin:0px;
+    padding:0px
+}
+html{
+    scroll-behavior: smooth;
+}
+.main{
+    width:100%;
+    background-image: url('nature.jpeg');
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+
+
+}
+.active{
+    position: fixed;
+    width:100%;
+    top:0px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.navbar h3{
+    width:100px;
+    margin: 20px;
+    color:white;
+
+}
+.heading{
+    text-align: center;
+    width:1000px;
+    font-size: 50px;
+    color:white;
+    margin:auto;
+    margin-top:200px;
+
+}
+.details{
+    color:white;
+    width:80%;
+    margin:auto;
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: justify;
+}
+.btn{
+    width:20%;
+    border-radius: 10px;
+    margin-left:40%;
+    padding:5px;
+    font-weight: bold;
+    margin-top:40px;
+    font-size: 20px;
+    background:transparent;
+    color:white;
+    border: 2px solid white;
+    margin-bottom: 200px;
+}
+.btn:hover{
+    background-color: white;
+    color:black;
+    
+}
+.navbar .menu ul{
+    margin:20px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.navbar .menu ul li{
+    list-style: none;
+    width:100%;
+    display: block;
+    margin:10px;
+    margin-left:10px;
+}
+.navbar .menu ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.navbar .menu ul li a:hover{
+    text-decoration: underline;
+
+}
+.homep{
+    background:transparent;
+    color:white;
+    visibility: hidden;
+}
+.tog{
+    font-size: 20px;
+    color:white;
+    visibility: hidden;
+    position: absolute;
+    top:35px;
+    right:20px;
+}
+h1{
+    text-align: center;
+    color:aqua;
+    font-size: 40px;
+    font-weight: bold;
+}
+.footer{
+    background-color:rgb(76, 76, 236);
+    padding:30px;
+    text-align: center;
+    border-radius: 2px;
+
+}
+.arrow{
+    color:aqua;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    visibility: hidden;
+    font-size: 30px;
+    text-shadow:4px 4px 20px aquamarine;
+    border:2px solid aquamarine;
+    padding:1px;
+    
+}
+.arrow:hover{
+    transform:scale(1.4)
+}
+.see{
+    visibility: visible
+}
+@media screen and (max-width:800px){
+    .tog{
+        visibility: visible;
+    }
+    h3{
+        font-size:15px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        background:black;
+    }
+    .navbar .menu ul{
+        background-color: black;
+        width:100vw;
+    }
+    .navbar .menu ul{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        margin:0px;
+        background-color:rgba(0,0,0,0.7)
+    }
+    .navbar .menu ul li a{
+        display: block;
+    }
+    .menu{
+        display:none;
+    }
+    .active{
+        display:flex;
+        margin:auto;
+        position: fixed;
+        top:0px;
+    }
+    .heading{
+        margin-top: 150px;
+        width:200px;
+        font-size:30px;
+    }
+    .details{
+        width:300px;
+    
+    }
+    .btn{
+        width:60%;
+        margin-left:20%;
+    }
+
+}
